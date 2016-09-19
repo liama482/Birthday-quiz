@@ -33,10 +33,10 @@ from calendar import month_name
 todaymonth = datetime.today().month
 todaydate = datetime.today().day
 
-user=input("Please tell me your name: ")
-birth_month=input("Please tell me your month of birth: ")
-birthyear=int(input("Please tell me your year of birth: "))
-day_month=int(input("Please tell me the day of that month: "))
+user=input("Hello, what is your name? ")
+birth_month=input("Hi " + user + ", what was the name of the month you were born in? ")
+birthyear=int(input("And what year were you born in, {0}? ".format(user)))
+day_month=int(input("And the day? "))
 prtd = "no"
 birth_month = birth_month.lower()
 
