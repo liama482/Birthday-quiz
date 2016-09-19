@@ -38,7 +38,7 @@ birth_month=input("Please tell me your month of birth: ")
 birthyear=int(input("Please tell me your year of birth: "))
 day_month=int(input("Please tell me the day of that month: "))
 prtd = "no"
-birth_month.lower()
+birth_month = birth_month.lower()
 
 if birth_month == "january" or birth_month == "february" or birth_month == "december":
     g = "winter"
