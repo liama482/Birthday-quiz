@@ -49,9 +49,9 @@ if birth_month == "september" or birth_month == "october" or birth_month == "nov
     g = fall
 if birthyear >= 2000:
     h = "two thousands"
-if birthyear >= 1990 and <2000:
+if birthyear >= 1990 and birthyear <2000:
     h = "nineties"
-if birthyear >= 1980 and <1990:
+if birthyear >= 1980 and birthyear <1990:
     h = "eighties"
 if birthyear < 1980:
     h = "Stone Age"
@@ -63,5 +63,5 @@ if birth_month == "october" and day_month == 31:
 if birth_month == todaymonth and day_month == todaydate:
     print ("Happy birthday!")
     prtd = yes
-if prtd = no:
-    print (s1.format(user,g,h)
+if prtd == no:
+    print (s1.format(user,g,h))
