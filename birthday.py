@@ -35,18 +35,19 @@ todaydate = datetime.today().day
 
 user=input("Please tell me your name: ")
 birth_month=input("Please tell me your month of birth: ")
-birthyear=input("Please tell me your year of birth: ")
-day_month=input("Please tell me the day of that month: ")
-prtd = no
+birthyear=int(input("Please tell me your year of birth: "))
+day_month=int(input("Please tell me the day of that month: "))
+prtd = "no"
+birth_month.lower()
 
 if birth_month == "january" or birth_month == "february" or birth_month == "december":
-    g = winter
+    g = "winter"
 if birth_month == "april" or birth_month == "may" or birth_month == "march":
-    g = spring
+    g = "spring"
 if birth_month == "july" or birth_month == "august" or birth_month == "june":
-    g = summer
+    g = "summer"
 if birth_month == "september" or birth_month == "october" or birth_month == "november":
-    g = fall
+    g = "fall"
 if birthyear >= 2000:
     h = "two thousands"
 if birthyear >= 1990 and birthyear <2000:
@@ -59,9 +60,9 @@ if birthyear < 1980:
 s1 = "{0}, you are a {1} baby of the {2}."
 if birth_month == "october" and day_month == 31:
     print ("You were born on Halloween!")
-    prtd = yes
+    prtd = "yes"
 if birth_month == todaymonth and day_month == todaydate:
     print ("Happy birthday!")
-    prtd = yes
-if prtd == no:
+    prtd = "yes"
+if prtd == "no":
     print (s1.format(user,g,h))
