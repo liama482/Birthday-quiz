@@ -1,7 +1,7 @@
 """
 birthday.py
 Author: Liam A.
-Credit: <list sources used, if any>
+Credit: http://stackoverflow.com/questions/6797984/how-to-convert-string-to-lowercase-in-python
 Assignment:
 
 Your program will ask the user the following questions, in this order:
