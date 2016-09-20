@@ -1,7 +1,7 @@
 """
 birthday.py
 Author: Liam A.
-Credit: http://stackoverflow.com/questions/6797984/how-to-convert-string-to-lowercase-in-python
+Credit: https://docs.python.org/3/library/stdtypes.html#str.lower
 Assignment:
 
 Your program will ask the user the following questions, in this order:
@@ -57,12 +57,18 @@ if birthyear >= 1980 and birthyear <1990:
 if birthyear < 1980:
     h = "Stone Age"
 
+mlist = list(month_name)
+#curr_month = month_name(todaymonth)
+nlist = [str.lower(x) for x in mlist]
+month_num = nlist.index(birth_month)
+
 s1 = "{0}, you are a {1} baby of the {2}."
 if birth_month == "october" and day_month == 31:
     print ("You were born on Halloween!")
     prtd = "yes"
-if birth_month == todaymonth and day_month == todaydate:
+if month_num == todaymonth and day_month == todaydate:
     print ("Happy birthday!")
     prtd = "yes"
 if prtd == "no":
     print (s1.format(user,g,h))
+
